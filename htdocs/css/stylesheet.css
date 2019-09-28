@@ -1,0 +1,545 @@
+	*
+{
+    /*Universal styling for the website*/
+    margin: 0;
+    padding: 0;
+}
+
+html
+{
+    /*Height of the website*/
+    height: 100%;
+    /*Enables smooth scrolling on website, noticable when clicking anchors*/
+
+    scroll-behavior: smooth;
+}
+
+body
+{
+    /*Sets sites font to Raleway*/
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    /*Sites font colour*/
+
+    color: #000;
+    /*Sites background colour*/
+    background: #fff;
+}
+
+nav
+{
+    /*Keeps the navbar at the top of the page at all times*/
+    position: fixed;
+    /*Ensures that the navbar occupies the full width of the browser windows*/
+
+    width: 100%;
+
+    background-color: rgba(0, 0, 0, .5);
+}
+
+/* start of horizontal navbar  */
+.text-nav
+{
+    font-size: 48px;
+
+    float: left;
+
+    margin: 7px;
+
+    color: #fff;
+}
+
+.hnavbar
+{
+    /*horizontal navbar design at top of page below title*/
+    font-size: 30px;
+    /*Font size of the text in the boxes*/
+
+    float: right;
+
+    margin-top: 10px;
+    /*margin	at the top between the wording and the background*/
+}
+
+.hnavbar li
+{
+    display: inline-block;
+
+    margin-right: 10px;
+    /*margin between the boxes*/
+
+    border: solid #fff 3px;
+    /*Border colour*/
+}
+
+.hnavbar a
+{
+    /*Nav bar text and box border*/
+    display: block;
+
+    padding: 7px;
+    /*change the size of the boxes in menu here*/
+
+    text-decoration: none;
+    /*removes standarised underlining of text */
+
+    color: #fff;
+    /*Text colour*/
+}
+
+.hnavbar li:hover
+{
+    /*Changes colour when hovered over*/
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.dropdown
+{
+    /*Width that fits all the text in clearly and fixes size for browser resize*/
+    width: 250px;
+}
+
+/* End of horizontal navbar */
+.dropdown-content
+{
+    /*Ensures dropdown is at the foreground*/
+    z-index: 2;
+    /*Hides content when not hovering over relevant nav box*/
+
+    display: none;
+    /*Width of the text boxes, matches width of "current rescues" due to resizing browsers*/
+
+    width: 250px;
+}
+
+.dropdown:hover .dropdown-content
+{
+    /*Ensures the dropdown does not fill in the nav box it originates from*/
+    position: absolute;
+    /*Block to enable dropdown, rather than inline*/
+
+    display: block;
+}
+
+.dropdown-content li
+{
+    display: block;
+
+    margin: auto;
+    /*Spaces between each box in the dropdown*/
+    margin: 1px;
+
+    text-align: center;
+
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.dropdown-content li a
+{
+    margin: 5px;
+
+    color: #fff;
+}
+
+.dropdown-content li:hover
+{
+    background-color: rgba(0, 0, 0, .8);
+}
+
+section.main-body
+{
+    font-size: 18px;
+
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.main
+{
+    display: block;
+
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.main h1
+{
+    font-size: 32px;
+
+    margin: 0;
+
+    text-align: center;
+}
+
+.main h2
+{
+    font-size: 24px;
+
+    text-align: center;
+}
+
+.main h3
+{
+    font-size: 24px;
+
+    text-align: left;
+}
+
+.main h4
+{
+    font-size: 24px;
+
+    text-align: center;
+}
+
+.main p
+{
+    font-size: 24px;
+
+    margin: 1% 0;
+
+    text-align: left;
+    text-indent: 1px;
+}
+
+.iText
+{
+    font-size: 22px;
+
+    position: absolute;
+    top: 90%;
+    left: 43%;
+
+    color: #fff;
+}
+
+.container
+{
+    text-align: center;
+}
+
+figure
+{
+    margin: .8em;
+    padding: .8em;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .19);
+}
+
+figure img
+{
+    max-height: 20em;
+    margin: .2em;
+
+    text-align: center;
+    /*Border around the image*/
+
+    border: solid black 3px;
+}
+
+.rGallery
+{
+    height: 425px;
+}
+i /*CSS used to create sqare icon and works with dArrow to create a downward facing triangle*/
+{
+    position: absolute;
+    bottom: 75px;
+
+    display: inline-block;
+
+    padding: 20px;
+
+    border: solid white;
+    border-width: 0 8px 8px 0;
+}
+
+/*CSS used to transform the remaining square shape to a triangle*/
+.dArrow
+{
+    transform: rotate(45deg);
+    /*Adds a blinking style animation to the interactable arrow*/
+    animation: blinking 1s linear infinite;
+    /*Blinking is the name of the "function" called*/
+}
+
+/*Opacity changing function that visualises as a blinking animation*/
+@keyframes blinking
+{
+    50%
+    {
+        opacity: 0;
+    }
+}
+
+#p1
+{
+    text-align: center;
+}
+
+#pAbout
+{
+    font-size: 24px;
+
+    text-align: center;
+}
+
+#iBanner
+{
+    display: block;
+
+    width: 100%;
+    height: auto;
+}
+
+#rMain
+{
+    width: 100%;
+}
+
+/*Fixed Footer*/
+footer
+{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+
+    background-color: #000;
+}
+
+/*Footer Text*/
+footer p
+{
+    font-size: 12px;
+    /*footer text	size*/
+
+    text-align: center;
+    /*Aligns text to centre of footer*/
+
+    color: #fff;
+    /*Sets colour to white*/
+}
+
+/* Create two equal columns that floats next to each other */
+.column1
+{
+    display: inline-block;
+    float: left;
+
+    width: 45%;
+    height: 300px;
+    padding: 10px;
+
+    text-align: center;
+}
+
+.column2
+{
+    display: inline-block;
+    float: right;
+
+    width: 45%;
+    height: 300px;
+    padding: 10px;
+
+    text-align: center;
+}
+
+/*Alligns text to the centre in colums*/
+.column1 p
+{
+    text-align: center;
+}
+.column2 p
+{
+    text-align: center;
+}
+/*Colums used in current rescues, alligns them all side by side with equal properties*/
+.column3
+{
+    display: inline-block;
+    float: left;
+
+    width: 25%;
+    height: 300px;
+    padding-bottom: 448px;
+
+    text-align: center;
+}
+
+/*Hides images not in use in the slideshow*/
+.slides
+{
+    display: none;
+}
+
+.Fslideshow
+{
+    width: 700px;
+}
+
+/* Slideshow fading animation */
+.fade
+{
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade
+{
+    from
+    {
+        opacity: .4;
+    }
+    to
+    {
+        opacity: 1;
+    }
+}
+/*End of fading animation*/
+
+/*Adds little mouse feedback when hovering over images in rGallery*/
+.rescue:hover
+{
+    opacity: .7;
+}
+
+form
+{
+    /* Clear floats after the columns */
+    text-align: center;
+}
+
+section.Form
+{
+    width: 350px;
+    margin-right: auto;
+    /*Centralises the form, along with margin-left*/
+    margin-left: auto;
+    /*Centralises the form, along with margin-right*/
+}
+
+input
+{
+    float: right;
+
+    width: 40%;
+    padding: 3px;
+
+    border-radius: 10px;
+    /*Makes the border for the input on form rounded*/
+}
+
+label
+{
+    float: left;
+}
+
+/*Floats input boxes on mailing list to the right*/
+.mInput
+{
+    float: right;
+}
+
+/*Specific Mailing list CSS*/
+#mList
+{
+    display: inline-block;
+
+    width: 30%;
+    margin-right: auto;
+    /*Allows scrolling past the bottom of the form*/
+    margin-bottom: 300px;
+    margin-left: auto;
+
+    text-align: center;
+}
+
+/*Mailing list submit button*/
+#submit
+{
+    float: none;
+
+    width: 100px;
+
+    border: dashed black 1px;
+}
+
+/*Twitter logo image on contact page*/
+#twitter_logo
+{
+    max-width: 100%;
+    /*Makes the image responsive to resize*/
+    height: auto;
+    margin-right: auto;
+    /*Same as above*/
+    /*Centralises*/
+    margin-left: auto;
+}
+
+/*Cottage picture on contact page*/
+#cottage
+{
+    width: 75%;
+    max-width: 100%;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+
+    border-radius: 10%;
+}
+
+/*Country select list on contact form*/
+#cList
+{
+    float: right;
+
+    width: 173px;
+}
+
+select
+{
+    border-radius: 10px;
+    /*Makes the border for the select on form rounded*/
+}
+
+textarea
+
+	/*Form text area on the contact_form.html page */
+{
+    font-family: Raleway;
+    /*Makes the font of the user inputted text match the website*/
+
+    box-sizing: border-box;
+    width: 100%;
+    /*matches the size of the margins for the input box*/
+    height: 300px;
+    /*Custom height for the text box before it starts to scroll*/
+
+    resize: vertical;
+    /*Allows vertical resize*/
+    text-decoration: none;
+    /*Removes standard decorations*/
+
+    border-radius: 10px;
+}
+
+/*Used  to mark where the down arrow scrolls too*/
+#bkmrk
+{
+    padding-top: 100px;
+}
+
+video
+{
+    /*Centralises video*/
+    display: block;
+
+    max-width: 100%;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+}

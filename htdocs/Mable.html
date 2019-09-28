@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Mabel</title>
+  <!--Website meta information-->
+  <meta charset="UTF-8">
+  <meta name="author" content="Benedict Gardner">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Stylesheet reference and font import-->
+  <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
+
+<body>
+  <!--Start of nav bar-->
+  <section class="nav-bar">
+    <nav>
+      <div class="text-nav">
+        <h1>Shrub Hill Cattery</h1>
+      </div>
+      <ul class="hnavbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about_us.html">About us</a></li>
+        <li class="dropdown"><a href="rescues.html">Current Rescues</a>
+          <ul class="dropdown-content">
+            <!--Dropdown-->
+            <li><a href="Mable.html">Mable</a></li>
+            <li><a href="Mango.html">Mango</a></li>
+            <li><a href="Majick.html">Majick</a></li>
+            <li><a href="Oscar.html">Oscar</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="mail_list.html">Mailing List</a></li>
+      </ul>
+    </nav>
+  </section>
+  <!--End of navbar-->
+  <section class="main-body">
+    <div class="main">
+      <h1>Mabel</h1>
+      <br><br>
+      <h2>The tabby with a mouth</h2>
+      <br><br><br><br>
+      <div class="row">
+        <!--Left side content-->
+        <div class="column1">
+          <p>Mable loves a fuss but is very undemanding. She will play with her toys alone, or will bat a ball back to you. Equally she is happy to snooze in a nice warm bed.
+            Fate has been unkind to Mable and she has what we believe is a food allergy which makes her skin extremely itchy. As you will see from her pictures she is now very well and stable on her current diet and medication.We feel she needs an
+            indoor home only to ensure control of her diet and reduce possible exposure to other allergens such as fleas. A new owner will need to be very strict about managing Purdy's treatment and we may be able to fund the ongoing medication
+            costs. Pretty Mable has been through a lot, and if you feel you have the experience to give her the care and love she needs she will reward you with lots of purrs.
+            Click <a href="mVideo.html" title="Click here to go to Mable video"><em>here</em></a> to see a video of Mable looking very relaxed!</P>
+        </div>
+        <!--Right side slideshow-->
+        <div class="column2">
+          <div class="slideshow">
+            <div class="slides fade">
+              <figure class="Fslideshow">
+                <img src="images/mable_020.jpg" alt="Cat sat in cat bed">
+              </figure>
+            </div>
+            <div class="slides fade">
+              <figure class="Fslideshow">
+                <img src="images/mable_030.jpg" alt="Cat asleep on bed">
+              </figure>
+            </div>
+            <div class="slides fade">
+              <figure class="Fslideshow">
+                <img src="images/mable_040.jpg" alt="Sneezing Cat">
+              </figure>
+            </div>
+          </div>
+          <!--Slideshow JS-->
+          <!--Code modified from W3Schools, source in report-->
+          <script>
+            var slideIndex = 0;
+
+            function showSlides() {
+              var e, s = document.getElementsByClassName("slides");
+              for (e = 0; e < s.length; e++) s[e].style.display = "none";
+              ++slideIndex > s.length && (slideIndex = 1), s[slideIndex - 1].style.display = "block", setTimeout(showSlides, 5e3)
+            }
+            showSlides();
+          </script>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>All rights reserved (c) 2018 Shrub Hill Cattery</p>
+  </footer>
+</body>
+
+</html>

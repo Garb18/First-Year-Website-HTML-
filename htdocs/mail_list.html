@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Mailing List</title>
+  <!--Meta data-->
+  <meta charset="UTF-8">
+  <meta name="author" content="Benedict Gardner">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Stylesheet reference and font import-->
+  <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <!--JS warning users if emails don't match-->
+  <script src="Javascript/email.js"></script>
+</head>
+
+<body>
+  <!--Nav bar-->
+  <section class="nav-bar">
+    <nav>
+      <div class="text-nav">
+        <h1>Shrub Hill Cattery</h1>
+      </div>
+      <ul class="hnavbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about_us.html">About us</a></li>
+        <li class="dropdown"><a href="rescues.html">Current Rescues</a>
+          <!--Dropdown-->
+          <ul class="dropdown-content">
+            <li><a href="Mable.html">Mable</a></li>
+            <li><a href="Mango.html">Mango</a></li>
+            <li><a href="Majick.html">Majick</a></li>
+            <li><a href="Oscar.html">Oscar</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="mail_list.html">Mailing List</a></li>
+      </ul>
+    </nav>
+  </section>
+  <!--image banner-->
+  <div class="container">
+    <img id="iBanner" src="images/cat_010.jpg" alt="Cat in long grass">
+    <!--Image source: https://www.flickr.com/photos/mextech/6093923823/in/photolist-ahuXf8-uYQ2H-aqXBdH-hDVqdM-2aCm4MT-atBJxp-79VHsD-daswEJ-7CNHMY-atupd6-7EQcoF-Z7NtKA-eDB6xg-fCv2CA-fSny3M-fPpqfw-7fyRQu-kL8Fcc-5w5Goo-4WDvTp-JAytif-7oSRQc-6qsJ5N-oTnC8k-6jcJZW-39TWv6-2bC5cC2-ehMvLa-9x45s6-a4txfJ-ehMvK6-7kzBWY-2bE9KNs-Deyhzz-2YWuj2-dk2zGY-YccidV-Ea2e9Y-8pZWrs-FHtxS-7bTWA-7zh6HG-drSZn2-q9tTXu-4Nqr5X-5pdktf-boCyAj-KqT1Zd-9r7Phn-7cNSVc-->
+    <a href="#bkmrk"><i class="dArrow"></i></a>
+  </div>
+    <section id="bkmrk" class="main-body">
+      <div class="main">
+        <h1>Join our mailing list! </h1>
+        <br>
+        <br>
+        <p id="p1">Keep up to date with the latest news!</p>
+        <br>
+        <br>
+        <form action="php/output.php" method="POST">
+          <section class="Form" id="mList">
+            <label>Email address:</label>
+            <input class="mInput" type="email" id="email" name="email" placeholder="name@domain.com" required>
+            <br>
+            <br> <label>Confirm Email address:</label>
+            <input class="mInput" type="email" id="confemail" name="confemail" placeholder="name@domain.com" required>
+            <br>
+            <br> <label>First Name:</label>
+            <input class="mInput" type="text" name="FirstName" required>
+            <br>
+            <br> <label>Surname: </label>
+            <input class="mInput" type="text" name="LastName" required>
+            <br>
+            <br>
+            <input id="submit" type="submit" value="Subscribe!" onclick="confirmEmail()">
+          </section>
+        </form>
+      </div>
+  </section>
+
+    <footer>
+      <p>All rights reserved (c) 2018 Shrub Hill Cattery</p>
+    </footer>
+</body>
+
+</html>

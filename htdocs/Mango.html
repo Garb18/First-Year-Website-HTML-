@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Mango</title>
+  <!--Meta data-->
+  <meta charset="UTF-8">
+  <meta name="author" content="Benedict Gardner">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Stylsheet reference and font import-->
+  <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
+
+<body>
+  <!--Nav bar-->
+  <section class="nav-bar">
+    <nav>
+      <div class="text-nav">
+        <h1>Shrub Hill Cattery</h1>
+      </div>
+      <ul class="hnavbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about_us.html">About us</a></li>
+        <li class="dropdown"><a href="rescues.html">Current Rescues</a>
+          <!--Dropdown-->
+          <ul class="dropdown-content">
+            <li><a href="Mable.html">Mable</a></li>
+            <li><a href="Mango.html">Mango</a></li>
+            <li><a href="Majick.html">Majick</a></li>
+            <li><a href="Oscar.html">Oscar</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="mail_list.html">Mailing List</a></li>
+      </ul>
+    </nav>
+  </section>
+  <section class="main-body">
+    <div class="main">
+      <h1>Mango</h1>
+      <br><br>
+      <h2>The ginger sweetheart</h2>
+      <br><br><br><br>
+      <!--Let side content-->
+      <div class="row">
+        <div class="column1">
+          <p>This handsome boy is looking for a home where he can have lots of fuss and space to go exploring. Mango is friendly and loves attention, but can forget his manners and give you a little nip. He has been stray for a while and would
+            clearly like
+            to be able to go outside again. He needs a patient owner with some cat experience who is prepared to give him a chance to settle into a forever home.
+            <!--Video link-->
+            Click <a href="sVideo.html" title="Click here to go to Mango video"><em>here</em></a> to see a video of Mango fascinated by a squirrel!</P>
+        </div>
+        <!--Right side slideshow-->
+        <div class="column2">
+          <div class="slideshow">
+            <div class="slides fade">
+              <figure class="Fslideshow">
+                <img src="images/mango_020.jpg" alt="Cat licking nose">
+              </figure>
+            </div>
+            <div class="slides fade">
+              <figure class="Fslideshow">
+                <img src="images/mango_030.jpg" alt="Cat asleep on bed">
+              </figure>
+            </div>
+            <div class="slides fade">
+              <figure class="Fslideshow">
+                <img src="images/mango_040.jpg" alt="Cats looking out window">
+              </figure>
+            </div>
+          </div>
+          <!--Slideshow JS-->
+          <!--Code modified from W3Schools, source in report-->
+          <script>
+            var slideIndex = 0;
+
+            function showSlides() {
+              var e, s = document.getElementsByClassName("slides");
+              for (e = 0; e < s.length; e++) s[e].style.display = "none";
+              ++slideIndex > s.length && (slideIndex = 1), s[slideIndex - 1].style.display = "block", setTimeout(showSlides, 5e3)
+            }
+            showSlides();
+          </script>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>All rights reserved (c) 2018 Shrub Hill Cattery</p>
+  </footer>
+</body>
+
+</html>

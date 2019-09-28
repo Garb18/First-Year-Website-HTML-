@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Oscar</title>
+  <!--Meta information-->
+  <meta charset="UTF-8">
+  <meta name="author" content="Benedict Gardner">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Stylsheet reference and font -->
+  <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
+
+<body>
+  <!--Navigation bar-->
+  <section class="nav-bar">
+    <nav>
+      <div class="text-nav">
+        <h1>Shrub Hill Cattery</h1>
+      </div>
+      <ul class="hnavbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about_us.html">About us</a></li>
+        <li class="dropdown"><a href="rescues.html">Current Rescues</a>
+          <!--Dropdown-->
+          <ul class="dropdown-content">
+            <li><a href="Mable.html">Mable</a></li>
+            <li><a href="Mango.html">Mango</a></li>
+            <li><a href="Majick.html">Majick</a></li>
+            <li><a href="Oscar.html">Oscar</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Contact Us</a></li>
+        <li><a href="mail_list.html">Mailing List</a></li>
+      </ul>
+    </nav>
+  </section>
+  <section class="main-body">
+    <div class="main">
+      <h1>Oscar</h1>
+      <br><br>
+      <h2>One Moggy to rule them all</h2>
+      <br><br><br><br>
+      <div class="row">
+        <!--Left side content-->
+        <div class="column1">
+          <p>Due to unforeseen circumstances the owner of Oscar can not longer keep him. So, Tommy is looking for a new loving home. Oscar is a little cat that is independent and loves being around people. He likes sitting in the sun but also likes
+            to be inside on somebodies lap. He likes playing especially with his toy mouse. As he likes being around people all the time he would like to find a new home where somebody is at home most of the time in a quiet environment. Ideally a
+            farm or home that has a lot of land as he is used to exploring on the farm he lives at now.
+        </div>
+        <!--Right side slideshow-->
+        <div class="column2">
+          <div class="slideshow">
+            <div class="slides fade">
+              <figure class="Fslideshow">
+                <img src="images/oscar_020.jpg" alt="Cat sleeping on radiator">
+              </figure>
+            </div>
+            <div class="slides fade">
+              <figure class="Fslideshow">
+                <img src="images/oscar_030.jpg" alt="Cat sat outside door">
+              </figure>
+            </div>
+            <div class="slides fade">
+              <figure class="Fslideshow">
+                <img src="images/oscar_040.jpg" alt="Cats sleeping on windowsill">
+              </figure>
+            </div>
+          </div>
+          <!--Slideshow JS-->
+          <!--Code modified from W3Schools, source in report-->
+          <script>
+            var slideIndex = 0;
+
+            function showSlides() {
+              var e, s = document.getElementsByClassName("slides");
+              for (e = 0; e < s.length; e++) s[e].style.display = "none";
+              ++slideIndex > s.length && (slideIndex = 1), s[slideIndex - 1].style.display = "block", setTimeout(showSlides, 5e3)
+            }
+            showSlides();
+          </script>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>All rights reserved (c) 2018 Shrub Hill Cattery</p>
+  </footer>
+</body>
+
+</html>
